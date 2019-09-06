@@ -1,0 +1,7 @@
+info:
+  profile: dev
+
+  test: gpg
+app:
+  greet:
+    name: dev

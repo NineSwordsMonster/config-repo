@@ -1,0 +1,6 @@
+info:
+  profile: default1111
+
+app:
+  greet:
+    name: default
