@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-client
+
+  cloud:
+    consul:
+      host: ${consul.instance.hostname}
+      port: ${consul.client.serviceUrl.consul-server-port}
+      discovery:
+        healthCheckPath: ${management.context-path}/health
+        healthCheckInterval: 15s
+        instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+
+server:
+  port: 22111

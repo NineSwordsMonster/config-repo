@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+
+consul:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      consul-server-port: 8500
